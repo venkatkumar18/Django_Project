@@ -22,4 +22,4 @@ urls<br />
   Delete users ->http://127.0.0.1:8000/delete/id <br />
   Update users ->http://127.0.0.1:8000/update/id <br />
 <br />
-DRF.postman_collection.json - it contains all the postman request in josn format.
+DRF.postman_collection.json - it contains all the postman request in json format.
