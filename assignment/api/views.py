@@ -18,7 +18,7 @@ def ApiOverview(request):
         'view': '/view',
         'Add': '/add',
         'Update': '/update/pk',
-        'Delete': '/item/pk/delete'
+        'Delete': '/delete/pk'
     }
 
     return Response(api_urls)
@@ -56,10 +56,10 @@ def view(request):
         return Response(status=status.HTTP_404_NOT_FOUND)
 
 
-@api_view(['POST'])
+@api_view(['PUT','PATCH'])
 def update(request, pk):
     item = User.objects.get(pk=pk)
-    data = UserSeriliazer(instance=item, data=request.data)
+    data = UserSeriliazer(instance=item, data=request.data,partial=True)
 
     if data.is_valid():
         data.save()
