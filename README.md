@@ -2,9 +2,9 @@
 Created basic CRUD operations with django rest framework <br />
 
 Packages Used <br />
-  *django                      - version =4.0.3   (pip install Django)<br />
-  *djangorestframework version - version =3.13.1  (pip install djangorestframework) <br />
-  *django-cors-headers version - version =3.11.0  (pip install django-cors-headers) <br />
+  *django               - version =4.0.3   (pip install Django)<br />
+  *djangorestframework  - version =3.13.1  (pip install djangorestframework) <br />
+  *django-cors-headers  - version =3.11.0  (pip install django-cors-headers) <br />
 
 Added ('rest_framework','api.apps.ApiConfig') inside installed_apps in settings.py<br />
 Added (api.middleware.CustomMiddleware) inside middleware in settings.py<br />
